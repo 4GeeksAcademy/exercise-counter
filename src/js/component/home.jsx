@@ -17,7 +17,7 @@ const Home = (props) => {
 		<div className="container d-flex bg-dark justify-content-center text-white">
 
 			<div className="card p-3 m-3 ">
-				<h1><i className="fa-regular fa-clock"></i></h1>
+				<h1><i className="fa-regular fa-clock d-flex justify-content-center align-middle mt-2"></i></h1>
 			</div>
 
 			<div className="card p-3 m-3 ">
