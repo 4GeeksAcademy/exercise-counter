@@ -10,7 +10,7 @@ const Home = (props) => {
 	<>
 
 	<label className="d-flex justify-content-center m-4 ">
-        Cuenta atrás <input className="ms-2"name="seconds" type="number" />
+        Cuenta atrás <input className="ms-2" name="seconds" type="number" />
     </label>
 
 
@@ -46,7 +46,11 @@ const Home = (props) => {
 
 		</div>
 		
-  		
+		<div className="d-flex justify-content-center" >
+			<button type="button" className="btn btn-success rounded-circle m-2"><i class="fa-solid fa-play"></i></button>
+			<button type="button" className="btn btn-secondary rounded-circle m-2"><i class="fa-solid fa-pause"></i></button>
+			<button type="button" className="btn btn-danger rounded-circle m-2"><i class="fa-solid fa-trash-can"></i></button>
+		</div>
 	</>	
 	);
 };

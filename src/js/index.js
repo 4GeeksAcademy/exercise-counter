@@ -17,9 +17,11 @@ let digit4 =0;
 let digit5 =0;
 let digit6 = 0;
 
+
 // CUENTA ATRÁS
 
 setInterval(function () {
+    
     seconds--
     digit1 = Math.trunc((seconds / 1) % 10);
     digit2 = Math.trunc((seconds / 10) % 10);
@@ -28,7 +30,7 @@ setInterval(function () {
     digit5 = Math.trunc((seconds / 10000) % 10);
     digit6 = Math.trunc((seconds / 100000) % 10);
     
-    ReactDOM.render(<Home seconds={seconds} digit1={digit1} digit2={digit2} digit3={digit3} digit4={digit4} digit5={digit5} digit6={digit6} />, document.querySelector("#app"));
+    ReactDOM.render(<Home seconds={seconds} digit1={digit1} digit2={digit2} digit3={digit3} digit4={digit4} digit5={digit5} digit6={digit6}/>, document.querySelector("#app"));
 
 },1000)
 
